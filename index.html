@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Builder 2025</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Portfolio Builder 2025</h1>
+  </header>
+
+  <main class="container">
+    <section class="builder">
+      <h2>Choose Components</h2>
+
+      <div class="palette">
+        <div class="component" draggable="true" ondragstart="drag(event)" data-component="name">Name</div>
+        <div class="component" draggable="true" ondragstart="drag(event)" data-component="bio">Bio</div>
+        <div class="component" draggable="true" ondragstart="drag(event)" data-component="skills">Skills</div>
+        <div class="component" draggable="true" ondragstart="drag(event)" data-component="project">Project</div>
+        <div class="component" draggable="true" ondragstart="drag(event)" data-component="description">Project Description</div>
+        <div class="component" draggable="true" ondragstart="drag(event)" data-component="profilePicture">Profile Picture</div>
+        <div class="component" draggable="true" ondragstart="drag(event)" data-component="bgImage">Background Image</div>
+      </div>
+
+      <div class="drop-zone" id="dropContainer" ondragover="allowDrop(event)" ondrop="drop(event)">
+        <strong>Drop Components Here</strong>
+      </div>
+    </section>
+
+    <section class="preview">
+      <h2>Live Preview</h2>
+      <div class="preview-section bg-preview" id="previewBg">
+        <div id="livePreviewContent"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js">
+
+  </script>
+</body>
+
+</html>

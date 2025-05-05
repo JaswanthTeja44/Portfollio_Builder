@@ -1,0 +1,128 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f2f5;
+}
+
+header {
+  background: #4b6cb7;
+  background: linear-gradient(to right, #182848, #4b6cb7);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.builder, .preview {
+  flex: 1 1 45%;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.input-field {
+  margin-bottom: 1rem;
+  position: relative;
+  padding: 0.5rem;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  cursor: move;
+}
+
+.input-field label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.input-field input, .input-field textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 2px 6px;
+  cursor: pointer;
+}
+
+.preview-section {
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}
+
+.preview-section div {
+  margin-bottom: 1rem;
+}
+
+.preview-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+.bg-preview {
+  padding: 1rem;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  transition: background 0.3s;
+}
+
+.palette {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.palette .component {
+  padding: 0.5rem;
+  border: 2px solid #888;
+  border-radius: 8px;
+  background: #e0e0e0;
+  cursor: grab;
+  text-align: center;
+}
+
+button {
+  background: #4b6cb7;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #3a539b;
+}
+
+.drop-zone {
+  padding: 1rem;
+  background: #f9f9f9;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  min-height: 300px;
+}
